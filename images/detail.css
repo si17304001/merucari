@@ -1,0 +1,313 @@
+@charset "utf-8";
+		body{
+		background-color:#f5f5f5;
+		}
+		
+		.parent{
+		 width: 45%;
+		 margin: auto;
+		 height: 100%;
+		 text-align:center;
+		 background-color: white;
+		}
+		
+		.all {
+		display: inline-block;
+		}
+		.sold{
+		 position: absolute;
+		 left: 0;
+		
+		}
+		@media screen and (orientation:landscape){
+		.table{
+		box-sizing: border-box;
+		text-align:start;
+		}
+		}
+		div{  
+		
+		}
+
+		
+		a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		
+		}
+		.syouhin{
+		 margin: auto;
+		 position: absolute;
+		 border-style: none;
+		}
+		.meruacri{
+		border-style: none;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		border: none;
+		}
+		.form1 {
+		height: 36px;
+		text-align: center;
+		width: 50%;
+		z-index:1;
+		
+		}
+		
+		.fa, .fab, .fal, .far, .fas {
+		position: absolute;
+		right: 210px;
+		top:67px;
+		}
+		.searchkey {
+		height: 38px;
+		width: 60%;
+		/*position:fixed;
+		position: inherit;*/
+		position: absolute;
+		
+		
+		}
+		.submit{
+		float:left;
+		}
+		.submit {
+		/* float: right; */
+		position: absolute;
+		right: 210px;
+		top: 67px;
+		}
+		
+		.name{
+		text-align: center;
+		}
+		
+		.img{
+		display: inline-block;
+		width: 40%;
+		position: relative;
+		}
+		
+		.price{
+		}
+		
+		.nickname{
+		}
+		
+		.good{
+		}
+		
+		.bad{
+		}
+		
+		.description{
+		}
+		
+		.shipping{
+		}
+		
+		.state{
+		}
+		
+		.prefcode{
+		}
+		
+		.like{
+		text-align: -webkit-auto;
+		}
+		p{
+		text-align:center;
+		}
+		
+		h1{
+		text-align:center;
+		}
+		
+		.purchase{
+		background-color: red;
+		width: 130px;
+		margin-left: 245px;
+		color: white;
+		}
+		
+		.testaaaa{
+		float: left;
+		}
+		
+		.god{
+		float: left;
+		}
+		
+		
+		.category{
+		float: left;
+		}
+		.aaa{
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+		height: 100%;
+		}
+		
+		
+		header{
+		padding: 10px;
+		margin-right: 150px;
+		}
+		
+		#nav-drawer {
+		  position: relative;
+		}
+
+		/*チェックボックス等は非表示に*/
+		.nav-unshown {
+		  display:none;
+		}
+
+		/*アイコンのスペース*/
+		#nav-open {
+		  display: inline-block;
+		  width: 30px;
+		  height: 22px;
+		  vertical-align: middle;
+		}
+
+		/*ハンバーガーの形をCSSで表現*/
+		#nav-open span, #nav-open span:before, #nav-open span:after {
+		  position: absolute;
+		  height: 3px;/*線の太さ*/
+		  width: 25px;/*長さ*/
+		  border-radius: 3px;
+		  background: #555;
+		  display: block;
+		  content: '';
+		  cursor: pointer;
+		}
+		#nav-open span:before {
+		  bottom: -8px;
+		}
+		#nav-open span:after {
+		  bottom: -16px;
+		}
+
+		/*閉じる用の薄黒箇所*/
+		#nav-close {
+		  display: none;
+		  position: fixed;
+		  z-index: 99;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  opacity: 0;
+		  transition: .3s ease-in-out;
+		}
+
+		/*メニューの中身*/
+		#nav-content {
+		       overflow: auto;
+		    position: fixed;
+		    z-index: 9999;
+		    width: 100%;
+		    max-width: 35%;
+		    height: 100%;
+		    background: #fff;
+		    transition: .3s ease-in-out;
+		    -webkit-transform: translateX(-105%);
+		}
+
+		/*チェックがついたら表示させる*/
+		#nav-input:checked ~ #nav-close {
+		  display: block;
+		  opacity: .5;
+		}
+
+		#nav-input:checked ~ #nav-content {
+		  -webkit-transform: translateX(0%);
+		  transform: translateX(0%);
+		  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+		}
+		
+		.button{
+		width: 100px;
+		/* height: 50px; */
+		border: 1px solid red;
+		border-radius: 5px;
+		text-align: center;
+		background-color: red;
+		color: white;
+		line-height: 40px;
+		float: right;
+		margin:10px;
+		}
+		
+		/* マウスオーバー時のカラー */
+		.button:hover {
+		/*
+		    background-color: red;
+		    */
+		} 
+		/* リンク領域のスタイル */
+		.button-a {
+		    display: block;
+		    padding: 7px 0;
+		    text-align: center;
+		}
+		/* マウスホバー時のカラー*/
+		.button-a:hover {
+		   /* color: red;*/
+		}
+		
+		
+		.button1{
+		    width: 165px;
+		    height: 40px;
+		    border: 1px solid #0099e8;
+		    border-radius: 5px;
+		    text-align: center;
+		    color: #0099e8;
+		    background-color: white;
+		    line-height: 40px;
+		    float: right;
+		    margin: 10px;
+		}
+		
+				/* マウスオーバー時のカラー */
+		.button1:hover {
+		    background-color: #0099e8;
+		    color: white;
+		} 
+		/* リンク領域のスタイル */
+		.button1-a {
+		    display: block;
+		    padding: 7px 0;
+		    text-align: center;
+		}
+		/* マウスホバー時のカラー*/
+		.button1-a:hover {
+		    color: #fff;
+		}
+		
+		.button2{
+		    float: right;
+		    margin: 10px;
+		    padding: 10px;
+		}
+		
+				/* マウスオーバー時のカラー */
+		.button2:hover {
+		} 
+		/* リンク領域のスタイル */
+		.button2-a {
+		}
+		/* マウスホバー時のカラー*/
+		.button2-a:hover {
+		}
+		
+		.testcategory{
+		}
+		
+		.test{
+		}

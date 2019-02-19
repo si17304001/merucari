@@ -1,0 +1,59 @@
+@charset "utf-8";
+		body{
+		background-color:#f5f5f5;
+		}
+		
+		.createuser{
+		width: 45%;
+		margin: auto;
+		height: 100%;
+		text-align: center;
+		background-color: white;
+		padding-top: 50px
+		}
+		h2{
+		}
+		
+		.ui{
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+		
+		.nn{
+		border: 1px solid #ccc;
+		background: #fff
+		}
+		
+		.ps{
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+		
+		.em{
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+		
+		.n{
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+		
+		.zc{
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+		
+		.pc{
+		border: 1px solid #ccc;
+		background: #fff;
+		width: 30%;
+		}
+		
+		.add{
+		border: 1px solid #ccc;
+		background: #fff;
+		}
+		
+		.submit{
+		}

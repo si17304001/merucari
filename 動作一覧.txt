@@ -1,0 +1,39 @@
+出品時
+Item書きこみ→Trade_info書き込み→Item_status書き込み
+
+
+
+購入時
+Itemの金額とUserの所持ポイント比較→
+・購入可の場合→Itemのavailableを購入不可に変更→trade_infoに購入者を書き込み→Itemstatusを発送待ち(1)に変更
+・購入不可の場合→所持ポイント不足の画面へ転送
+
+
+
+
+購入後（チャットページへの移動）
+既に売れた商品かどうか→Itemのavailableが購入不可かどうか→
+・購入不可→取引チャットを見れるかどうか→TradeInfo内商品IDとSalerIDまたはBuyerIDのどちらかが自分のIDか？→
+		・ある→ItemIdでチャットテーブルをSelect→
+				①発送通知→Itemstatusを受け取り待ち(2)に変更
+				②受け取り通知→Itemstatusを評価待ち(3)に変更→手数料を引いた額をSalerのポイントに加算→dealへ結果を入力                ③評価→SalerならBuyerへBuyerならSalerへそれぞれの評価を書き込む
+		
+		・ない→エラー(エラーページへ飛ばす)※不正な操作
+
+・購入可→エラー(エラーページへ飛ばす)※不正な操作
+
+
+
+
+
+
+いいね
+Likeを押す→LikeテーブルUログインしているIDでserId、ItemIDでSelect→
+・なければ→Insert
+・あったら→countを＋１
+
+※LikeのCountが2で割り切れるときは常に表示しない
+
+
+
+

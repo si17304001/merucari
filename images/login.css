@@ -1,0 +1,223 @@
+@charset "utf-8";
+		
+		a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		
+		}
+		
+		body{
+		background-color:#f5f5f5;
+		}
+		
+		.logintest{
+		float: left;
+		}
+		
+		.tops{
+		float: left;
+		}
+		
+		
+		.categorytclothes{
+		float: left;
+		}
+		.loginuser{
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+		height: 100%;
+		}
+		
+		
+		header{
+		padding: 10px;
+		margin-right: 150px;
+		}
+		
+		#nav-drawer {
+		  position: relative;
+		}
+
+		/*チェックボックス等は非表示に*/
+		.nav-unshown {
+		  display:none;
+		}
+
+		/*アイコンのスペース*/
+		#nav-open {
+		  display: inline-block;
+		  width: 30px;
+		  height: 22px;
+		  vertical-align: middle;
+		}
+
+		/*ハンバーガーの形をCSSで表現*/
+		#nav-open span, #nav-open span:before, #nav-open span:after {
+		  position: absolute;
+		  height: 3px;/*線の太さ*/
+		  width: 25px;/*長さ*/
+		  border-radius: 3px;
+		  background: #555;
+		  display: block;
+		  content: '';
+		  cursor: pointer;
+		}
+		#nav-open span:before {
+		  bottom: -8px;
+		}
+		#nav-open span:after {
+		  bottom: -16px;
+		}
+
+		/*閉じる用の薄黒箇所*/
+		#nav-close {
+		  display: none;
+		  position: fixed;
+		  z-index: 99;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  opacity: 0;
+		  transition: .3s ease-in-out;
+		}
+
+		/*メニューの中身*/
+		#nav-content {
+		       overflow: auto;
+		    position: fixed;
+		    z-index: 9999;
+		    width: 100%;
+		    max-width: 35%;
+		    height: 100%;
+		    background: #fff;
+		    transition: .3s ease-in-out;
+		    -webkit-transform: translateX(-105%);
+		}
+
+		/*チェックがついたら表示させる*/
+		#nav-input:checked ~ #nav-close {
+		  display: block;
+		  opacity: .5;
+		}
+
+		#nav-input:checked ~ #nav-content {
+		  -webkit-transform: translateX(0%);
+		  transform: translateX(0%);
+		  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+		}
+		
+		.loginbutton{
+		width: 100%;
+		/* height: 50px; */
+		border: 1px solid red;
+		border-radius: 5px;
+		text-align: center;
+		background-color: red;
+		color: white;
+		line-height: 40px;
+		/*float: right;*/
+		margin-top: 24px;
+		}
+		
+		/* マウスオーバー時のカラー */
+		.loginbutton:hover {
+		/*
+		    background-color: red;
+		    */
+		} 
+		/* リンク領域のスタイル */
+		.loginbutton-a {
+		    display: block;
+		    padding: 7px 0;
+		    text-align: center;
+		}
+		/* マウスホバー時のカラー*/
+		.loginbutton-a:hover {
+		   /* color: red;*/
+		}
+		
+		
+		.account{
+		/* width: 165px; */
+		/* height: 40px; */
+		border: 1px solid #0099e8;
+		border-radius: 5px;
+		text-align: center;
+		color: white;
+		background-color:#0099e8;
+		line-height: 40px;
+		/* float: right; */
+		maring:8px 0 0;
+		}
+		
+				/* マウスオーバー時のカラー */
+		.account:hover {
+		    background-color: #0099e8;
+		    color: white;
+		} 
+		/* リンク領域のスタイル */
+		.account-a {
+		    display: block;
+		    padding: 7px 0;
+		    text-align: center;
+		}
+		/* マウスホバー時のカラー*/
+		.acount-a:hover {
+		    color: #0099e8;
+		}
+		
+		.button2{
+		    float: right;
+		    margin: 10px;
+		    padding: 10px;
+		}
+		
+				/* マウスオーバー時のカラー */
+		.logout:hover {
+		} 
+		/* リンク領域のスタイル */
+		.logout-a {
+		}
+		/* マウスホバー時のカラー*/
+		.logout-a:hover {
+		}
+		.login{
+		
+		}
+		
+		.usertest{
+		    width: 45%;
+		    margin: auto;
+		    height: 100%;
+		    text-align: center;
+		    background-color: white;
+		    padding-top: 50px;
+		}
+		
+		.form1{
+		height: 36px;
+		text-align: center;
+		width: 50%;
+		z-index: 1;
+		}
+		
+		.searchkey {
+		height: 38px;
+		width: 60%;
+		position: absolute;
+		}
+		
+		.submit {
+		 /* float: right; */
+		 position: absolute;
+		 right: 210px;top: 67px;
+		 }
+		 
+		 .email{
+		 }
+		 
+		 .password{
+		 }

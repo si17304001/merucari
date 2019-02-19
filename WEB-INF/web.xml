@@ -1,0 +1,23 @@
+<web-app>
+
+<welcome-file-list>
+	<welcome-file>/WEB-INF/jsp/start.jsp</welcome-file>
+</welcome-file-list>
+
+<servlet>
+	<servlet-class>tera.FrontServlet</servlet-class>
+	<servlet-name>FrontServlet</servlet-name>
+</servlet>
+<servlet-mapping>
+	<servlet-name>FrontServlet</servlet-name>
+	<url-pattern>/</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/images/*</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>

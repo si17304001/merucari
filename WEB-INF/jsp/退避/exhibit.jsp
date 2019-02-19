@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=windows-31J" pageEncoding="windows-31J"%>
+<html>
+	<head><title>è§ïiìoò^</title></head>
+	<body>
+	<form method'post' action='exhi'>
+		è§ïiñº<input type='text' name = 'name'><br>
+		âøäi<input type='text' name='price'><br>
+		<input type='submit' value='ìoò^'>
+	</form>
+	</body>
+</html>

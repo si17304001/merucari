@@ -1,0 +1,289 @@
+@charset "utf-8";
+		body{
+		background-color:#f5f5f5;
+		}
+		.parent{
+		display:inline-block;
+		text-align: center;
+		/*padding: 20px;*/
+		border: none;
+		margin:12px;
+		background-size:contain;
+		background-color:white;
+		width: 268px;
+		
+		}
+		.sold{
+		margin-right:auto;
+		position:absolute;
+		left:0;
+		top:0;
+		
+		}
+		@media screen and (orientation:landscape){
+		.table{
+		box-sizing: border-box;
+		text-align:start;
+		}
+		}
+		
+		/*
+		div{  
+		border-style: solid;  
+		border-color: black; 
+		position:relative;
+		text-align: center;
+		border: none;
+		
+		}
+		*/
+		
+		a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		
+		}
+		.syouhin{
+		 margin: auto;
+		 position: absolute;
+		 border-style: none;
+		 text-align: center;
+		}
+		.meruacri{
+		border-style: none;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		border: none;
+		}
+		.form1 {
+		height: 36px;
+		text-align: center;
+		width: 50%;
+		z-index:1;
+		
+		}
+		
+		.fa, .fab, .fal, .far, .fas {
+		position: absolute;
+		right: 210px;
+		top:67px;
+		}
+		.searchkey {
+		height: 38px;
+		width: 60%;
+		/*position:fixed;
+		position: inherit;*/
+		position: absolute;
+		
+		
+		}
+		.submit{
+		float:left;
+		}
+
+		.submit {
+		/* float: right; */
+		position: absolute;
+		right: 210px;
+		top: 67px;
+		}
+		
+		.img{
+		disply:block;
+		margin:0 auto;
+		position:relative;
+		}
+		
+		# div{
+		top:0px;
+		}
+		
+		.viewcategory{
+		float: left;
+		}
+		
+		.tops{
+		float: left;
+		}
+		
+		
+		.categoryclothes{
+		float: left;
+		}
+		
+		.view{
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+		height: 100%;
+		}
+		
+		
+		header{
+		padding: 10px;
+		margin-right: 150px;
+		}
+		
+		#nav-drawer {
+		  position: relative;
+		}
+
+		/*チェックボックス等は非表示に*/
+		.nav-unshown {
+		  display:none;
+		}
+
+		/*アイコンのスペース*/
+		#nav-open {
+		  display: inline-block;
+		  width: 30px;
+		  height: 22px;
+		  vertical-align: middle;
+		}
+
+		/*ハンバーガーの形をCSSで表現*/
+		#nav-open span, #nav-open span:before, #nav-open span:after {
+		  position: absolute;
+		  height: 3px;/*線の太さ*/
+		  width: 25px;/*長さ*/
+		  border-radius: 3px;
+		  background: #555;
+		  display: block;
+		  content: '';
+		  cursor: pointer;
+		}
+		#nav-open span:before {
+		  bottom: -8px;
+		}
+		#nav-open span:after {
+		  bottom: -16px;
+		}
+
+		/*閉じる用の薄黒箇所*/
+		#nav-close {
+		  display: none;
+		  position: fixed;
+		  z-index: 99;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  opacity: 0;
+		  transition: .3s ease-in-out;
+		}
+
+		/*メニューの中身*/
+		#nav-content {
+		       overflow: auto;
+		    position: fixed;
+		    z-index: 9999;
+		    width: 100%;
+		    max-width: 35%;
+		    height: 100%;
+		    background: #fff;
+		    transition: .3s ease-in-out;
+		    -webkit-transform: translateX(-105%);
+		}
+
+		/*チェックがついたら表示させる*/
+		#nav-input:checked ~ #nav-close {
+		  display: block;
+		  opacity: .5;
+		}
+
+		#nav-input:checked ~ #nav-content {
+		  -webkit-transform: translateX(0%);
+		  transform: translateX(0%);
+		  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+		}
+		
+		.login{
+		width: 100px;
+		/* height: 50px; */
+		border: 1px solid red;
+		border-radius: 5px;
+		text-align: center;
+		background-color: red;
+		color: white;
+		line-height: 40px;
+		float: right;
+		margin:10px;
+		}
+		
+		/* マウスオーバー時のカラー */
+		.login:hover {
+		/*
+		    background-color: red;
+		    */
+		} 
+		/* リンク領域のスタイル */
+		.login-a {
+		    display: block;
+		    padding: 7px 0;
+		    text-align: center;
+		}
+		/* マウスホバー時のカラー*/
+		.login-a:hover {
+		   /* color: red;*/
+		}
+		
+		
+		.account{
+		    width: 165px;
+		    height: 40px;
+		    border: 1px solid #0099e8;
+		    border-radius: 5px;
+		    text-align: center;
+		    color: #0099e8;
+		    background-color: white;
+		    line-height: 40px;
+		    float: right;
+		    margin: 10px;
+		}
+		
+				/* マウスオーバー時のカラー */
+		.account:hover {
+		    background-color: #0099e8;
+		    color: white;
+		} 
+		/* リンク領域のスタイル */
+		.account-a {
+		    display: block;
+		    padding: 7px 0;
+		    text-align: center;
+		}
+		/* マウスホバー時のカラー*/
+		.account-a:hover {
+		    color: #fff;
+		}
+		
+		.login{
+		   
+		}
+		
+				/* マウスオーバー時のカラー */
+		.login:hover {
+		} 
+		/* リンク領域のスタイル */
+		.login-a {
+		}
+		/* マウスホバー時のカラー*/
+		.login-a:hover {
+		}
+		
+		.testcategory{
+		}
+		
+		.test{
+		}
+		
+		.page{
+		}
+		
+		.exhibit{
+		}
+		
+		.logout{
+		}
